@@ -1,0 +1,7 @@
+# requirements.txt - 필요한 패키지 (기본)
+
+# 현재는 표준 라이브러리만 사용, 추후 확장 시 아래 패키지 추가
+# numpy
+# pandas
+# matplotlib
+# scikit-learn
