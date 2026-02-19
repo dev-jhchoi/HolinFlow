@@ -40,6 +40,10 @@ function App() {
     if (hostname === 'localhost' || hostname === '127.0.0.1') {
       return 'http://localhost:8000'
     }
+    // Cloudflare Tunnel 사용 시
+    if (hostname.includes('trycloudflare.com')) {
+      return 'https://walls-biggest-exclude-salt.trycloudflare.com'
+    }
     // 다른 IP/도메인인 경우 같은 호스트의 8000 포트 사용
     return `http://${hostname}:8000`
   }
